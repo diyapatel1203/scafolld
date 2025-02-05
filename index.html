@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a href="" class="navbar-brand">Scaffold</a>
+            <button class="btn btn-toggler d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#slidebar" ><span><i class="bi bi-list d-lg-none text-dark"></i></span></button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav" style="margin-left: 20%;">
+                    <li class="nav-item"><a href="" class="nav-link me-3">Home</a></li>
+                    <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#menu">
+                        About
+                    </a>
+                        <ul class="dropdown-menu" id="menu">
+                            <li class="dropdown-item"><a href="" class="nav-link">About Us</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link">Team</a></li>
+                            <li class="dropdown-item"><a href="" class="nav-link">Testimonials</a></li>
+                            <li class="dropmenu"><a href="" class="dropdown-item">Deep Drop Down<i class="bi bi-caret-right-fill"></i></a>
+                                <ul class="dropdown submenu list-unstyled bg-white">
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 1</a></li>
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 2</a></li>
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 3</a></li>
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 4</a></li>
+                                    <li><a href="" class="dropdown-item">Deep Drop Down 5</a></li>
+                                </ul>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link me-3">Services</a></li>
+                    <li class="nav-item"><a href="" class="nav-link me-3">Portfolio</a></li>
+                    <li class="nav-item"><a href="" class="nav-link me-3">Pricing</a></li>
+                    <li class="nav-item"><a href="" class="nav-link me-3">Contact</a></li>
+                </ul>
+                    <div class="nav-icon mt-3 ms-auto">
+                        <ul class="d-flex">
+                            <li class="list-unstyled ms-1"><a href=""><i class="bi bi-twitter text-secondary"></i></a></li>
+                            <li class="list-unstyled ms-3"><a href=""><i class="bi bi-facebook text-secondary"></i></a></li>
+                            <li class="list-unstyled ms-3"><a href=""><i class="bi bi-instagram text-secondary"></i></a></li>
+                            <li class="list-unstyled ms-3"><a href=""><i class="bi bi-linkedin text-secondary"></i></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="slidebar" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel" class="ms-5">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-5">
+                <li class="nav-item"><a href="" class="nav-link me-3 text-dark">Home</a></li>
+                <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" data-bs-target="#menu">
+                    About
+                </a>
+                    <ul class="dropdown-menu" id="menu">
+                        <li class="dropdown-item"><a href="" class="nav-link text-dark">About Us</a></li>
+                        <li class="dropdown-item"><a href="" class="nav-link text-dark">Team</a></li>
+                        <li class="dropdown-item"><a href="" class="nav-link text-dark">Testimonials</a></li>
+                        <li class="dropmenu"><a href="" class="dropdown-item text-dark">Deep Drop Down<i class="bi bi-caret-right-fill"></i></a>
+                            <ul class="dropdown submenu list-unstyled bg-white">
+                                <li><a href="" class="dropdown-item">Deep Drop Down 1</a></li>
+                                <li><a href="" class="dropdown-item">Deep Drop Down 2</a></li>
+                                <li><a href="" class="dropdown-item">Deep Drop Down 3</a></li>
+                                <li><a href="" class="dropdown-item">Deep Drop Down 4</a></li>
+                                <li><a href="" class="dropdown-item">Deep Drop Down 5</a></li>
+                            </ul>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link me-3 text-dark">Services</a></li>
+                <li class="nav-item"><a href="" class="nav-link me-3 text-dark">Portfolio</a></li>
+                <li class="nav-item"><a href="" class="nav-link me-3 text-dark">Pricing</a></li>
+                <li class="nav-item"><a href="" class="nav-link me-3 text-dark">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center mt-5 mb-5">
+            <div class="col-6 col-sm-12 col-lg-6">
+                <h1 style="font-weight: 700;line-height: 56px;color: #364146; font-family: sans-serif;">
+                    We design digital products<br> that help grow businesses
+                </h1>
+                <p style="color: #576971; font-size: 20px; font-family: sans-serif;">
+                    We are team of talented designers making websites<br> with Bootstrap
+                </p>
+                <button class="btn text-white" style="background-color: #009cea;">Get Started</button>
+            </div>
+            <div class="col-5 col-sm-12 col-lg-5">
+                <img src="img/i1.png" alt="" style="height: 500px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="continer bg-light m-5 p-5 m-sm-3 p-sm-3 m-lg-5 p-lg-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6 col-sm-12 col-lg-6">
+                    <img src="https://bootstrapmade.com/demo/templates/Scaffold/assets/img/about.jpg" alt="" style="height: 390px;width: 100%;">
+                </div>
+                <div class="col-6 col-sm-12 col-lg-6 icon text-left  mt-3">
+                    <h3 style="font-size: 32px; font-family: sans-serif;">Learn more about us</h3>
+                    <p style="font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua.</p>
+
+                    <p><i class="ri-checkbox-circle-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p><i class="ri-checkbox-circle-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    <p><i class="ri-checkbox-circle-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperd</p>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor <br> in reprehenderit in voluptate tera noden carma palorp mades tera.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 col-sm-12 col-lg-6 d-flex align-items-start">
+                <ul class="nav flex-column">
+                    <li class="nav-item tab mb-2">
+                        <a href="" class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home">
+                            <h4>Modi sit est</h4>
+                            <p>Quis exepturi porro totam sint earum quo nulla persipiciatis eius</p>
+                        </a>
+                    </li>
+                    <li class="nav-item tab mb-2">
+                        <a href="" class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                            <h4>Unde praesentium sed</h4>
+                            <p>Voluptas vel esse repudiandae quo excepturi</p>
+                        </a>
+                    </li>
+                    <li class="nav-item tab mb-2">
+                        <a href="" class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                            <h4>Pariatur explicabo vel</h4>
+                            <p>velit veniam ipsa sit nihil blanditiis molliatia natus.</p>
+                        </a>
+                    </li>
+                    <li class="nav-item tab mb-2">
+                        <a href="" class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                            <h4>Nostrum qui quasi</h4>
+                            <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-12 col-lg-6">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><img src="img/i3.png" alt=""></div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"><img src="img/i4.png" alt=""></div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><img src="img/i5.png" alt=""></div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"><img src="img/i6.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light" style="height:500px;">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="head mt-5 mb-3">
+                    <h2>Services</h2>
+                    <p class="para mt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui<br> impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-sm-5 mt-lg-0" style="text-align: center;">
+                    <div class="card diya card1">
+                        <i class="ri-dribbble-line mt-4" style="font-size: 50px; color: #ff689b;;"></i>
+                        <div class="card-body">
+                            <h5>Lorem ipsum</h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores Lorem ipsum dolor sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-sm-5 mt-lg-0" style="text-align: center;">
+                    <div class="card diya card2">
+                        <i class="ri-file-text-line mt-4" style="font-size: 50px; color: #3fcdc7;"></i>
+                        <div class="card-body">
+                            <h5>Lorem ipsum</h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores Lorem ipsum dolor sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-sm-5 mt-lg-0" style="text-align: center;">
+                    <div class="card diya card3">
+                        <i class="ri-speed-up-fill mt-4" style="font-size: 50px; color: #41cf2e;"></i>
+                        <div class="card-body">
+                            <h5>Lorem ipsum</h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores Lorem ipsum dolor sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-12 col-md-6 col-lg-3 mt-sm-5 mt-lg-0" style="text-align: center;">
+                    <div class="card diya card4">
+                        <i class="ri-earth-line mt-4" style="font-size: 50px; color: #2282ff;"></i>
+                        <div class="card-body">
+                            <h5>Lorem ipsum</h5>
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores Lorem ipsum dolor sit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>Portfolio</h2>
+            <p class="para mt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui<br> impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="btn" role="tab" aria-controls="home" aria-selected="true">ALL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="btn" role="tab" aria-controls="profile" aria-selected="false">APP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="btn" role="tab" aria-controls="contact" aria-selected="false">CARD</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#" id="blog-tab" data-bs-toggle="tab" data-bs-target="#blog" type="btn" role="tab" aria-controls="blog" aria-selected="false">WEB</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i7.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i8.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">WEB 3</h3>
+                                    <P class="text">WEB</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i9.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 2</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i10.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">CARD 2</h3>
+                                    <P class="text">CARD</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i11.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">WEB 2</h3>
+                                    <P class="text">WEB</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i12.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 3</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i13.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">CARD 1</h3>
+                                    <P class="text">CARD</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i14.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i15.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row">
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i7.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i9.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i12.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="row">
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i10.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i13.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i14.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog-tab">
+                    <div class="row">
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i8.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i11.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="te xt">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main col-4 col-sm-12 col-md-6 col-lg-4 pb-4 mt-4 filter-app"id="app1">
+                            <img src="img/i15.jpg" alt="" height="300px"width="100%">
+                            <div class="img">
+                                <div class="con">
+                                    <h3 class="title">APP 1</h3>
+                                    <P class="text">APP</P>
+                                    <div class="icon">
+                                        <i class="icon2 bi bi-plus-lg"></i>                        
+                                        <i class="icon3 bi bi-link-45deg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg mt-5 mb-5">
+        <div class="container">
+            <div class="row content">
+                <div class="col-10 col-sm-12 col-lg-10">
+                    <h3 style="font-family: sans-serif; font-size: 28px;">Call To Action</h3>
+                    <p style="font-family: sans-serif; color: #576971; font-size: 16px;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat<br> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-2 col-sm-12 col-lg-2 mt-4">
+                    <button class="btn text-white" style="background-color: #009cea; margin-left: 55px; padding: 10px 20px;">Call To Action</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" >
+                  <div class="swiper-slide d-sm-none d-lg-flex">
+                    <div class="col-4">
+                        <div class="card diya" style="width: 18rem; margin-left: -130px; width: 400px;">
+                            <div class="card-body">
+                              <p class="card-text pb-5" style="font-style: italic;"><i class="ri-double-quotes-l text-secondary"></i>  Some quick example text to build on the card title and make up the bulk of the card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. <i class="ri-double-quotes-r text-secondary"></i></p>
+                            </div>
+                        </div>
+                        <img src="img/pro.jpg" class="card-img-top rounded-pill" alt="" style="height: 100px;width: 100px; margin-top: -40px; position: relative; border: 5px solid white; margin-left: -90px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide d-sm-none d-lg-flex">
+                    <div class="col-4">
+                        <div class="card diya" style="width: 18rem; margin-left: -130px; width: 400px;">
+                            <div class="card-body">
+                              <p class="card-text pb-5" style="font-style: italic;"><i class="ri-double-quotes-l text-secondary"></i>  Some quick example text to build on the card title and make up the bulk of the card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. <i class="ri-double-quotes-r text-secondary"></i></p>
+                            </div>
+                        </div>
+                        <img src="img/pro1.jpg" class="card-img-top rounded-pill" alt="" style="height: 100px;width: 100px; margin-top: -40px; position: relative; border: 5px solid white; margin-left: -90px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide m-sm-auto">
+                    <div class="col-4 col-sm-12 col-lg-4">
+                        <div class="card diya" style="width: 18rem; margin-left: -130px; width: 400px;">
+                            <div class="card-body">
+                              <p class="card-text pb-5" style="font-style: italic;"><i class="ri-double-quotes-l text-secondary"></i>  Some quick example text to build on the card title and make up the bulk of the card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. <i class="ri-double-quotes-r text-secondary"></i></p>
+                            </div>
+                        </div>
+                        <img src="img/pro2.jpg" class="card-img-top rounded-pill" alt="" style="height: 100px;width: 100px; margin-top: -40px; position: relative; border: 5px solid white; margin-left: -90px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide d-sm-none d-lg-flex">
+                    <div class="col-4">
+                        <div class="card diya" style="width: 18rem; margin-left: -130px; width: 400px;">
+                            <div class="card-body">
+                              <p class="card-text pb-5" style="font-style: italic;"><i class="ri-double-quotes-l text-secondary"></i>  Some quick example text to build on the card title and make up the bulk of the card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. <i class="ri-double-quotes-r text-secondary"></i></p>
+                            </div>
+                        </div>
+                        <img src="img/pro3.jpg" class="card-img-top rounded-pill" alt="" style="height: 100px;width: 100px; margin-top: -40px; position: relative; border: 5px solid white; margin-left: -90px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide d-sm-none d-lg-flex">
+                    <div class="col-4">
+                        <div class="card diya" style="width: 18rem; margin-left: -130px; width: 400px;">
+                            <div class="card-body">
+                              <p class="card-text pb-5" style="font-style: italic;"><i class="ri-double-quotes-l text-secondary"></i>  Some quick example text to build on the card title and make up the bulk of the card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. <i class="ri-double-quotes-r text-secondary"></i></p>
+                            </div>
+                        </div>
+                        <img src="img/pro.jpg" class="card-img-top rounded-pill" alt="" style="height: 100px;width: 100px; margin-top: -40px; position: relative; border: 5px solid white; margin-left: -90px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide d-sm-none d-lg-flex">
+                    <div class="col-4">
+                        <div class="card diya" style="width: 18rem; margin-left: -130px; width: 400px;">
+                            <div class="card-body">
+                              <p class="card-text pb-5" style="font-style: italic;"><i class="ri-double-quotes-l text-secondary"></i>  Some quick example text to build on the card title and make up the bulk of the card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. <i class="ri-double-quotes-r text-secondary"></i></p>
+                            </div>
+                        </div>
+                        <img src="img/pro1.jpg" class="card-img-top rounded-pill" alt="" style="height: 100px;width: 100px; margin-top: -40px; position: relative; border: 5px solid white; margin-left: -90px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide d-sm-none d-lg-flex">
+                    <div class="col-4">
+                        <div class="card diya" style="width: 18rem; margin-left: -130px; width: 400px;">
+                            <div class="card-body">
+                              <p class="card-text pb-5" style="font-style: italic;"><i class="ri-double-quotes-l text-secondary"></i>  Some quick example text to build on the card title and make up the bulk of the card's Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. <i class="ri-double-quotes-r text-secondary"></i></p>
+                            </div>
+                        </div>
+                        <img src="img/pro2.jpg" class="card-img-top rounded-pill" alt="" style="height: 100px;width: 100px; margin-top: -40px; position: relative; border: 5px solid white; margin-left: -90px;">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <div class="container-fluid banner mt-5">
+        <div class="head mb-5 pt-5">
+            <h2>Team</h2>
+            <p class="para mt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui<br> impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mt-2 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card ">
+                        <img src="https://bootstrapmade.com/demo/templates/Scaffold/assets/img/team/team-1.jpg" alt="">
+        
+                    </div>
+                    <div class="card-box text-center pt-3 card-icon ms-sm-5 ms-md-0 ms-lg-0">
+                        <h5 class="title ">Walter white</h5>
+                        <p class="line"></p>
+                        <p class="text text-secondary">Chief Executive Officer</p>
+                        <ul class="d-flex team-icon ">
+                            <li class="list-unstyled p-2"><a href=""><i class="bi bi-twitter"></i></a></li>
+                                <li class="list-unstyled p-2"><a href=""><i class="bi bi-facebook"></i></a></li>
+                                <li class="list-unstyled p-2 "><a href=""><i class="bi bi-instagram"></i></a></li>
+                                <li class="list-unstyled p-2"><a href=""><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-4 mt-2 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card ">
+                        <img src="https://bootstrapmade.com/demo/templates/Scaffold/assets/img/team/team-2.jpg" alt="">
+        
+                    </div>
+                    <div class="card-box text-center pt-3 ms-sm-5 ms-md-0 ms-lg-0">
+        
+                        <h5 class="title ">Walter white</h5>
+                        <p class="line"></p>
+                        <p class="text text-secondary">Chief Executive Officer</p>
+                        <ul class="d-flex team-icon ">
+                            <li class="list-unstyled p-2"><a href=""><i class="bi bi-twitter"></i></a></li>
+                                <li class="list-unstyled p-2"><a href=""><i class="bi bi-facebook"></i></a></li>
+                                <li class="list-unstyled p-2 "><a href=""><i class="bi bi-instagram"></i></a></li>
+                                <li class="list-unstyled p-2"><a href=""><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="col-4 mt-2 col-sm-12 col-md-7 col-lg-4">
+                    <div class="card ">
+                        <img src="https://bootstrapmade.com/demo/templates/Scaffold/assets/img/team/team-3.jpg" alt="">
+        
+                    </div>
+                    <div class="card-box text-center pt-3 ms-sm-5 ms-md-0 ms-lg-0">
+                        <h5 class="title ">Walter white</h5>
+                        <p class="line"></p>
+                        <p class="text text-secondary">Chief Executive Officer</p>
+                        <ul class="d-flex team-icon ">
+                            <li class="list-unstyled p-2"><a href=""><i class="bi bi-twitter"></i></a></li>
+                                <li class="list-unstyled p-2"><a href=""><i class="bi bi-facebook"></i></a></li>
+                                <li class="list-unstyled p-2 "><a href=""><i class="bi bi-instagram"></i></a></li>
+                                <li class="list-unstyled p-2"><a href=""><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2>Clients</h2>
+        <p class="para mt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui<br> impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+        <div class="row ms-5 ms-sm-0 ms-lg-5">
+            <div class="col-3 col-sm-6 col-lg-3 logo" style="border: 1px solid gainsboro; padding-left: 8%; padding-top: 3%; padding-bottom: 3%;">
+                <img src="img/logo1.png" alt="" style="height: 50px; width: 100px;">
+            </div>
+            <div class="col-3 col-sm-6 col-lg-3 logo" style="border: 1px solid gainsboro; padding-left: 8%; padding-top: 3%; padding-bottom: 3%;">
+                <img src="img/logo2.png" alt="" style="height: 50px; width: 100px;">
+            </div>
+            <div class="col-3 col-sm-6 col-lg-3 logo" style="border: 1px solid gainsboro; padding-left: 8%; padding-top: 3%; padding-bottom: 3%;">
+                <img src="img/logo3.png" alt="" style="height: 50px; width: 100px;">
+            </div>
+            <div class="col-3 col-sm-6 col-lg-3 logo" style="border: 1px solid gainsboro; padding-left: 8%; padding-top: 3%; padding-bottom: 3%;">
+                <img src="img/logo4.png" alt="" style="height: 50px; width: 100px;">
+            </div>
+            <div class="col-3 col-sm-6 col-lg-3 logo" style="border: 1px solid gainsboro; padding-left: 8%; padding-top: 3%; padding-bottom: 3%;">
+                <img src="img/logo5.png" alt="" style="height: 50px; width: 100px;">
+            </div>
+            <div class="col-3 col-sm-6 col-lg-3 logo" style="border: 1px solid gainsboro; padding-left: 8%; padding-top: 3%; padding-bottom: 3%;">
+                <img src="img/logo6.png" alt="" style="height: 50px; width: 100px;">
+            </div>
+            <div class="col-3 col-sm-6 col-lg-3 logo" style="border: 1px solid gainsboro; padding-left: 8%; padding-top: 3%; padding-bottom: 3%;">
+                <img src="img/logo7.png" alt="" style="height: 50px; width: 100px;">
+            </div>
+            <div class="col-3 col-sm-6 col-lg-3 logo" style="border: 1px solid gainsboro; padding-left: 8%; padding-top: 3%; padding-bottom: 3%;">
+                <img src="img/logo8.png" alt="" style="height: 50px; width: 100px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light pb-5">
+        <div class="head mb-5 pt-5">
+            <h2>Pricing</h2>
+            <p class="para mt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui<br> impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card text-center p-2 m-sm-auto mt-sm-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h3 class="card-title">Free</h3>
+                          <h4>
+                            <sup class="text-primary fs-3">$</sup> <span class="text-primary fs-1">0</span> <span class="text-secondary">/ month</span>
+                          </h4>
+                          <ul class="list-unstyled p-3">
+                            <li class="p-2">Aida dere</li>
+                            <li class="p-2">Nec feugiat nisl</li>
+                            <li class="p-2">Nulla at volutpat dola</li>
+                            <li class="p-2 text-secondary"><s>Pharetra massa</s></li>
+                            <li class="p-2 text-secondary"><s>Massa ultricies mi</s></li>
+                          </ul>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card text-center bg-primary p-2 m-sm-auto mt-sm-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h3 class="card-title text-white">Business</h3>
+                          <h4>
+                            <sup class="text-white fs-3">$</sup> <span class="text-white fs-1">19</span> <span class="text-white">/ month</span>
+                          </h4>
+                          <ul class="list-unstyled p-3">
+                            <li class="p-2 text-white">Aida dere</li>
+                            <li class="p-2 text-white">Nec feugiat nisl</li>
+                            <li class="p-2 text-white">Nulla at volutpat dola</li>
+                            <li class="p-2 text-white">Pharetra massa</li>
+                            <li class="p-2 text-white"><s>Massa ultricies mi</s></li>
+                          </ul>
+                          <a href="#" class="btn bg-white text-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card text-center p-2 m-sm-auto mt-sm-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h3 class="card-title">Developer</h3>
+                          <h4>
+                            <sup class="text-primary fs-3">$</sup> <span class="text-primary fs-1">29</span> <span class="text-secondary">/ month</span>
+                          </h4>
+                          <ul class="list-unstyled p-3">
+                            <li class="p-2">Aida dere</li>
+                            <li class="p-2">Nec feugiat nisl</li>
+                            <li class="p-2">Nulla at volutpat dola</li>
+                            <li class="p-2">Pharetra massa</li>
+                            <li class="p-2">Massa ultricies mi</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card text-center p-2 m-sm-auto mt-sm-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h3 class="card-title">Ultimate</h3>
+                          <h4>
+                            <sup class="text-primary fs-3">$</sup> <span class="text-primary fs-1">49</span> <span class="text-secondary">/ month</span>
+                          </h4>
+                          <ul class="list-unstyled p-3">
+                            <li class="p-2">Aida dere</li>
+                            <li class="p-2">Nec feugiat nisl</li>
+                            <li class="p-2">Nulla at volutpat dola</li>
+                            <li class="p-2">Pharetra massa</li>
+                            <li class="p-2">Massa ultricies mi</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="row">
+            <ul class="list-unstyled">
+                <li>
+                    <p>
+                        <div class="btn fs-5 ms-2 fs-sm-0 ms-sm-0" data-bs-toggle="collapse" href="#collapseExample1"  aria-expanded="true" aria-controls="collapseExample">
+                            <i class="bi bi-chevron-down"></i>  Non consectetur a erat nam at lectus urna duis?
+                        </div>
+                    </p>
+                    <div class="collapse" id="collapseExample1">
+                    <div class="ms-5" style="font-size: 18px;">
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </div>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <p>
+                        <div class="btn fs-5 ms-2 fs-sm-0 ms-sm-0" data-bs-toggle="collapse" href="#collapseExample2"  aria-expanded="true" aria-controls="collapseExample">
+                            <i class="bi bi-chevron-down"></i>  Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                        </div>
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                    <div class="ms-5" style="font-size: 18px;">
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </div>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <p>
+                        <div class="btn fs-5 ms-2 fs-sm-0 ms-sm-0" data-bs-toggle="collapse" href="#collapseExample3"  aria-expanded="true" aria-controls="collapseExample">
+                            <i class="bi bi-chevron-down"></i> Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                        </div>
+                    </p>
+                    <div class="collapse" id="collapseExample3">
+                    <div class="ms-5" style="font-size: 18px;">
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </div>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <p>
+                        <div class="btn fs-5 ms-2 fs-sm-0 ms-sm-0" data-bs-toggle="collapse" href="#collapseExample4"  aria-expanded="true" aria-controls="collapseExample">
+                            <i class="bi bi-chevron-down"></i>  Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                        </div>
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                    <div class="ms-5" style="font-size: 18px;">
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </div>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <p>
+                        <div class="btn fs-5 ms-2 fs-sm-0 ms-sm-0" data-bs-toggle="collapse" href="#collapseExample5"  aria-expanded="true" aria-controls="collapseExample">
+                            <i class="bi bi-chevron-down"></i>  Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                        </div>
+                    </p>
+                    <div class="collapse" id="collapseExample5">
+                    <div class="ms-5" style="font-size: 18px;">
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </div>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <p>
+                        <div class="btn fs-5 ms-2 fs-sm-0 ms-sm-0" data-bs-toggle="collapse" href="#collapseExample6"  aria-expanded="true" aria-controls="collapseExample">
+                            <i class="bi bi-chevron-down"></i>  Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
+                        </div>
+                    </p>
+                    <div class="collapse" id="collapseExample6">
+                    <div class="ms-5" style="font-size: 18px;">
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </div>
+                    </div>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light pt-5">
+        <h2>Contact Us</h2>
+
+        <div class="container">
+            <div class="row d-flex pb-5">
+                <div class="col-5 bg-white col-sm-12 col-lg-5" style="box-shadow: 5px 5px 10px lightgray;">
+                    <div class="info pt-4">
+                        <div class="location ps-3 pb-3 d-flex align-items-center">
+                            <i class="bi bi-geo-alt fs-4"></i>
+                            <div class="text ms-3">
+                                <h5>Location:</h5>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div>
+                        <div class="location ps-3 pb-3 d-flex align-items-center">
+                            <i class="bi bi-envelope fs-4"></i>
+                            <div class="text ms-3">
+                                <h5>Email:</h5>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="location ps-3 d-flex align-items-center">
+                            <i class="bi bi-phone fs-4"></i>
+                            <div class="text ms-3">
+                                <h5>Call:</h5>
+                                <p>+1 5589 55488 55s</p>
+                            </div>
+                        </div>
+                        <div class="map ms-3 mt-3 mb-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3614657903995!2d-74.0087126239744!3d40.71005857139392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sin!4v1707837424620!5m2!1sen!2sin" width="490" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 bg-white ms-5 ms-sm-0 ms-lg-5 p-3 col-sm-12 col-lg-6" style="box-shadow: 5px 5px 10px lightgray;">
+                    <form action="forms/contact.php">
+                        <div class="row">
+                            <div class="col-6 ps-4">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" class="form-control" id="name" required="">
+                            </div>
+                            <div class="col-6 pe-4">
+                                <label for="name">Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email" required="">
+                            </div>
+                            <div class="col-12 pt-4 ps-4 pe-4">
+                                <label for="name">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="subject" required="">
+                            </div>
+                            <div class="col-12 p-4">
+                                <label for="name">Message</label>
+                                <textarea class="form-control" name="message" rows="8" required=""></textarea>
+                            </div>
+                            <div class="msg">
+                                <span>Send Message</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-3 col-sm-6 col-lg-3">
+                    <div class="footer-info">
+                        <h3>Scaffold</h3>
+                        <p>
+                            A108 Adam Street<br>
+                            NY 535022, USA<br><br>
+                            <b>Phone:</b><span> +1 5589 55488 55</span><br> 
+                            <b>Email:</b><span>info@example.com</span>
+                        </p>
+                        <div class="social pt-3">
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-skype"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 col-sm-6 col-lg-2">
+                    <h4>Useful Links</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>Home</span></li>
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>About us</span></li>
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>Services</span></li>
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>Term of service</span></li>
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>Privacy policy</span></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-sm-6 col-lg-3">
+                    <h4>Our Services</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>Web Design</span></li>
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>Web Deve lopment</span></li>
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>Product Managerment</span></li>
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>Marketing</span></li>
+                        <li class="mb-3"><i class="bi bi-chevron-right text-primary"></i> <span>Graphic Design</span></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-6 col-lg-4">
+                    <h4>Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <div>
+                        <input type="email" name="email" style="padding: 5px 15px;">
+                        <input type="submit" value="Subscribe" style="background-color: #009cea; border: none; color: white; padding: 7px 15px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
